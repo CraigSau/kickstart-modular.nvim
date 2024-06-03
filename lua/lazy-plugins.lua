@@ -40,7 +40,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/cmp',
 
-  require 'kickstart/plugins/tokyonight',
+  --require 'kickstart/plugins/tokyonight',
+  require 'kickstart/plugins/gruvbox',
 
   require 'kickstart/plugins/todo-comments',
 
@@ -48,20 +49,17 @@ require('lazy').setup({
 
   require 'kickstart/plugins/treesitter',
 
-  -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
-  -- init.lua. If you want these files, they are in the repository, so you can just download them and
-  -- place them in the correct locations.
+  require 'kickstart.plugins.debug',
 
-  -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
-  --
-  --  Here are some example plugins that I've included in the Kickstart repository.
-  --  Uncomment any of the lines below to enable them (you will need to restart nvim).
-  --
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.indent_line',
+
+  require 'kickstart.plugins.lint',
+
+  require 'kickstart.plugins.autopairs',
+
+  require 'kickstart.plugins.neo-tree',
+
+  require 'kickstart.plugins.fugative',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.

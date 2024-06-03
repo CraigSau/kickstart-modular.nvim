@@ -22,4 +22,6 @@ return {
       },
     },
   },
+
+  vim.keymap.set('n', '<leader>ft', '<cmd> Neotree reveal'),
 }
